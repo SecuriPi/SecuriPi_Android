@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SécuriPi:  Fichier source de src/org/securipi/securipi/UserSettingActivity.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SécuriPi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetages</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_user_setting_activity_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">UserSettingActivity.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_user_setting_activity_8java.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>org.securipi.securipi;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.security.MessageDigest;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.security.NoSuchAlgorithmException;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> android.app.Activity;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> android.content.Intent;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> android.os.Bundle;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> android.view.View;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">import</span> android.view.View.OnClickListener;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> android.widget.Button;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> android.widget.EditText;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">import</span> android.widget.Toast;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html">   20</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html">UserSettingActivity</a> <span class="keyword">extends</span> Activity implements OnClickListener {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html">DAO</a> dao = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html">DAO</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span> EditText editTextLogin, editTextPassword, editTextPasswordConfirm;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span> Button buttonSaveAccount;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_clients.html">Clients</a> connected_client;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> id_client;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span> Intent intentModifyLogin, intentModifyPassword;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    @Override</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html#a84c54a8a130888eef6523f3466c0c6b8">   34</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html#a84c54a8a130888eef6523f3466c0c6b8">onCreate</a>(Bundle savedInstanceState) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        super.onCreate(savedInstanceState);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        setContentView(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1layout.html">layout</a>.activity_user_setting);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        id_client = this.getIntent().getExtras().getInt(<span class="stringliteral">&quot;id_client&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        connected_client = dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a8348ea0b6ae91acda325ed246b5d7ca2">getClientWithId</a>(id_client);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">close</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        editTextLogin = (EditText) findViewById(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.editTextLogin);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        editTextPassword = (EditText) findViewById(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.editTextPassword);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        editTextPasswordConfirm = (EditText) findViewById(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.editTextPasswordConfirm);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        buttonSaveAccount = (Button) findViewById(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.buttonConfirmAccount);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        editTextLogin.setText(connected_client.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a28578e021a2da44f0989c2f2a5b90bde">getLogin</a>());</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        buttonSaveAccount.setOnClickListener(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    @Override</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html#a515fe414c71951ccaa52e6b1950b4267">   60</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html#a515fe414c71951ccaa52e6b1950b4267">onClick</a>(View view) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">switch</span> (view.getId()) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.buttonConfirmAccount:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Boolean bModified = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            String login = editTextLogin.getText().toString();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            String password = editTextPassword.getText().toString();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            String passwordConfirm = editTextPasswordConfirm.getText().toString();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (!login.matches(<span class="stringliteral">&quot;&quot;</span>)) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">if</span>(!password.matches(<span class="stringliteral">&quot;&quot;</span>) &amp;&amp; !passwordConfirm.matches(<span class="stringliteral">&quot;&quot;</span>)) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">if</span>(password.matches(passwordConfirm)) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        connected_client.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a730e8e3526040a4a35bde295507f5b8d">setLogin</a>(login);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        connected_client.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a4a55046b7282111933d3192d81393536">setPassword</a>(md5(password));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        Toast.makeText(<span class="keyword">this</span>, <span class="stringliteral">&quot;Les deux mots de passes sont différents&quot;</span>, Toast.LENGTH_SHORT).show();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        bModified = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    connected_client.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a730e8e3526040a4a35bde295507f5b8d">setLogin</a>(login);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">if</span>(bModified == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ac0f45e93c0103206ac1708bcab863d00">updateClient</a>(id_client, connected_client);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">close</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    Thread setClients = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        <span class="keyword">public</span> <span class="keywordtype">void</span> run() {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                            <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html">UserSettingActivity</a>.this);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                            dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                            </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                            dao.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#a4b7b3b0635e117572a26b6162289ebe5">setClients</a>(<span class="keyword">new</span> ArrayList&lt;Clients&gt;(dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5f3ccc1db86d9d7a8bc6426a46ca97bf">getListClients</a>(id_client)));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    });</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    setClients.start();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <span class="keywordflow">try</span> { setClients.join(); } <span class="keywordflow">catch</span>(Exception e) {}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">close</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    Toast.makeText(<span class="keyword">this</span>, <span class="stringliteral">&quot;Votre compte à été modifié&quot;</span>, Toast.LENGTH_SHORT).show();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                editTextPassword.setText(null);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                editTextPasswordConfirm.setText(null);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                Toast.makeText(<span class="keyword">this</span>, <span class="stringliteral">&quot;L&#39;identifiant ne peux pas être vide&quot;</span>, Toast.LENGTH_SHORT).show();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">private</span> String md5(String s) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;     </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            MessageDigest digest = java.security.MessageDigest.getInstance(<span class="stringliteral">&quot;MD5&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            digest.update(s.getBytes());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            byte messageDigest[] = digest.digest();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;     </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            StringBuffer hexString = <span class="keyword">new</span> StringBuffer();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; messageDigest.length; i++) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                String h = Integer.toHexString(0xFF &amp; messageDigest[i]);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">if</span>(h.length() &lt; 2) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    h = <span class="stringliteral">&quot;0&quot;</span> + h;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                hexString.append(h);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span> hexString.toString();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;     </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        } <span class="keywordflow">catch</span> (NoSuchAlgorithmException e) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity_html_a515fe414c71951ccaa52e6b1950b4267"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html#a515fe414c71951ccaa52e6b1950b4267">org.securipi.securipi.UserSettingActivity.onClick</a></div><div class="ttdeci">void onClick(View view)</div><div class="ttdef"><b>Definition:</b> <a href="_user_setting_activity_8java_source.html#l00060">UserSettingActivity.java:60</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html_a4b7b3b0635e117572a26b6162289ebe5"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#a4b7b3b0635e117572a26b6162289ebe5">org.securipi.securipi.DAO.setClients</a></div><div class="ttdeci">void setClients(ArrayList&lt; Clients &gt; listClients)</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00092">DAO.java:92</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a8348ea0b6ae91acda325ed246b5d7ca2"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a8348ea0b6ae91acda325ed246b5d7ca2">org.securipi.securipi.DbAdapter.getClientWithId</a></div><div class="ttdeci">Clients getClientWithId(int identifiant)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00284">DbAdapter.java:284</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity_html_a84c54a8a130888eef6523f3466c0c6b8"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html#a84c54a8a130888eef6523f3466c0c6b8">org.securipi.securipi.UserSettingActivity.onCreate</a></div><div class="ttdeci">void onCreate(Bundle savedInstanceState)</div><div class="ttdef"><b>Definition:</b> <a href="_user_setting_activity_8java_source.html#l00034">UserSettingActivity.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_clients_html_a28578e021a2da44f0989c2f2a5b90bde"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a28578e021a2da44f0989c2f2a5b90bde">org.securipi.securipi.Clients.getLogin</a></div><div class="ttdeci">String getLogin()</div><div class="ttdef"><b>Definition:</b> <a href="_clients_8java_source.html#l00064">Clients.java:64</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_clients_html_a4a55046b7282111933d3192d81393536"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a4a55046b7282111933d3192d81393536">org.securipi.securipi.Clients.setPassword</a></div><div class="ttdeci">void setPassword(String password)</div><div class="ttdef"><b>Definition:</b> <a href="_clients_8java_source.html#l00086">Clients.java:86</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_ac0f45e93c0103206ac1708bcab863d00"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ac0f45e93c0103206ac1708bcab863d00">org.securipi.securipi.DbAdapter.updateClient</a></div><div class="ttdeci">int updateClient(int identifiant, Clients client)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00259">DbAdapter.java:259</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html">org.securipi.securipi.DAO</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00026">DAO.java:26</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html">org.securipi.securipi.UserSettingActivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_user_setting_activity_8java_source.html#l00020">UserSettingActivity.java:20</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_1_1layout_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r_1_1layout.html">org.securipi.securipi.R.layout</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00051">R.java:51</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r.html">org.securipi.securipi.R</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00010">R.java:10</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_clients_html_a730e8e3526040a4a35bde295507f5b8d"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_clients.html#a730e8e3526040a4a35bde295507f5b8d">org.securipi.securipi.Clients.setLogin</a></div><div class="ttdeci">void setLogin(String login)</div><div class="ttdef"><b>Definition:</b> <a href="_clients_8java_source.html#l00071">Clients.java:71</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a5f3ccc1db86d9d7a8bc6426a46ca97bf"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5f3ccc1db86d9d7a8bc6426a46ca97bf">org.securipi.securipi.DbAdapter.getListClients</a></div><div class="ttdeci">List&lt; Clients &gt; getListClients(int id_client)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00322">DbAdapter.java:322</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_1_1id_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">org.securipi.securipi.R.id</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00027">R.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_clients_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_clients.html">org.securipi.securipi.Clients</a></div><div class="ttdef"><b>Definition:</b> <a href="_clients_8java_source.html#l00006">Clients.java:6</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">org.securipi.securipi.DbAdapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00014">DbAdapter.java:14</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_aab92d2bdb2aea03cd0603b2a3a0cc7f8"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">org.securipi.securipi.DbAdapter.open</a></div><div class="ttdeci">DbAdapter open()</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00079">DbAdapter.java:79</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a5027b1e6411ef70e2353ed01227bf6f7"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">org.securipi.securipi.DbAdapter.close</a></div><div class="ttdeci">DbAdapter close()</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00088">DbAdapter.java:88</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b8e0663afee48cb679b74bbd21bdf843.html">org</a></li><li class="navelem"><a class="el" href="dir_23025f24e0c26e1403415f7e77a9b19a.html">securipi</a></li><li class="navelem"><a class="el" href="dir_e9f57a99468db133c91529b64ac1fdc5.html">securipi</a></li><li class="navelem"><a class="el" href="_user_setting_activity_8java.html">UserSettingActivity.java</a></li>
+    <li class="footer">Généré le Vendredi 29 Mai 2015 00:55:48 pour SécuriPi par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

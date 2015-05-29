@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SécuriPi:  Fichier source de src/org/securipi/securipi/CamerasActivity.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SécuriPi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetages</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_cameras_activity_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CamerasActivity.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cameras_activity_8java.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>org.securipi.securipi;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> <a class="code" href="namespaceorg.html">org</a>.apache.http.HttpResponse;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> <a class="code" href="namespaceorg.html">org</a>.apache.http.client.HttpClient;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> <a class="code" href="namespaceorg.html">org</a>.apache.http.client.ResponseHandler;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> <a class="code" href="namespaceorg.html">org</a>.apache.http.client.methods.HttpPost;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> <a class="code" href="namespaceorg.html">org</a>.apache.http.impl.client.BasicResponseHandler;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">import</span> <a class="code" href="namespaceorg.html">org</a>.apache.http.impl.client.DefaultHttpClient;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> android.app.Activity;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">import</span> android.app.ProgressDialog;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">import</span> android.content.Intent;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">import</span> android.net.wifi.WifiManager;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">import</span> android.os.Bundle;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">import</span> android.text.format.Formatter;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">import</span> android.util.Log;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> android.view.Menu;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> android.view.MenuItem;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> android.view.View;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> android.widget.AdapterView;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> android.widget.AdapterView.OnItemClickListener;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> android.widget.AdapterView.OnItemLongClickListener;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> android.widget.ListView;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html">   31</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html">CamerasActivity</a> <span class="keyword">extends</span> Activity implements OnItemClickListener, OnItemLongClickListener {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> id_client;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span> Intent intentVisualisation;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span> Intent intentEditCamera;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span> ListView listView;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span> List&lt;Cameras&gt; listeCamerasClient;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_adapter.html">CamerasAdapter</a> camerasAdapter;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> RESULT_SETTINGS = 1;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">private</span> Thread getData = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> run() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#abe747309abc900c1b76b88aa76e8db3f">getClients</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a7fc90f206cd7b7f0609abe8423a02e1b">getCameras</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a735e4713813acd59f168ef4c7721b136">getConnexions</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            dialog.dismiss();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    });</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span> HttpPost httpPost;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span> HttpResponse response;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span> HttpClient httpClient;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span> ProgressDialog dialog = null;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html">DAO</a> dao = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html">DAO</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span> ArrayList&lt;Clients&gt; listeClients = <span class="keyword">new</span> ArrayList&lt;Clients&gt;();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span> ArrayList&lt;Cameras&gt; listeCameras = <span class="keyword">new</span> ArrayList&lt;Cameras&gt;();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">private</span> ArrayList&lt;Connexions&gt; listeConnexions = <span class="keyword">new</span> ArrayList&lt;Connexions&gt;();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    @Override</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a8245f61c842f07ff86d8527bc5a8ff70">   65</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a8245f61c842f07ff86d8527bc5a8ff70">onCreate</a>(Bundle savedInstanceState) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        super.onCreate(savedInstanceState);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        super.setContentView(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1layout.html">layout</a>.activity_cameras);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        id_client = this.getIntent().getExtras().getInt(<span class="stringliteral">&quot;id_client&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        dialog = ProgressDialog.show(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html">CamerasActivity</a>.this, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Récupération des données&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        getData.start();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            getData.join();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        } <span class="keywordflow">catch</span>(Exception e) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            Log.d(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Exeception : &quot;</span> + e.getMessage());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#aeebcb022f76acb431a2acf70081a03dd">initDb</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        listeCamerasClient = dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a325ac3b4347dc643717388943ad7a4c8">getListCameras</a>(id_client);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">close</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        listView = (ListView)findViewById(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.listViewCameras);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        camerasAdapter = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_adapter.html">CamerasAdapter</a>(<span class="keyword">this</span>, listeCamerasClient);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        listView.setAdapter(camerasAdapter);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        listView.setOnItemClickListener(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        listView.setOnItemLongClickListener(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    @Override</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a127e4fcc100aa8280696cbd4d0550f8e">  100</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a127e4fcc100aa8280696cbd4d0550f8e">onCreateOptionsMenu</a>(Menu menu) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        getMenuInflater().inflate(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1menu.html">menu</a>.cameras, menu);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    @Override</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#ae4b9d0655ea2fc83e80d623a46e21fca">  110</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#ae4b9d0655ea2fc83e80d623a46e21fca">onOptionsItemSelected</a>(MenuItem item) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">switch</span> (item.getItemId()) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.menu_settings:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                Intent intentUserSettings = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html">UserSettingActivity</a>.class);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                intentUserSettings.putExtra(<span class="stringliteral">&quot;id_client&quot;</span>, id_client);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                startActivityForResult(intentUserSettings, RESULT_SETTINGS);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.menu_addCam:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                Intent intentAddCam = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_add_camera_activity.html">AddCameraActivity</a>.class);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                intentAddCam.putExtra(<span class="stringliteral">&quot;id_client&quot;</span>, id_client);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                startActivityForResult(intentAddCam, RESULT_SETTINGS);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    @Override</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a343716bc83a84bfd16e23e6221d4be50">  133</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a343716bc83a84bfd16e23e6221d4be50">onItemClick</a>(AdapterView&lt;?&gt; a, View v, <span class="keywordtype">int</span> position, <span class="keywordtype">long</span> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        Intent intentVisualisation = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_mjpeg_sample_activity.html">MjpegSampleActivity</a>.class);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        intentVisualisation.putExtra(<span class="stringliteral">&quot;id_camera&quot;</span>, listeCameras.get(position).getIdentifiant());</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        startActivity(intentVisualisation);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    @Override</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#af1138535a56bb72102483c3b043263ab">  144</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#af1138535a56bb72102483c3b043263ab">onItemLongClick</a>(AdapterView&lt;?&gt; parent, View v, <span class="keywordtype">int</span> position, <span class="keywordtype">long</span> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        Intent intentEditCamera = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_edit_camera_activity.html">EditCameraActivity</a>.class);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        intentEditCamera.putExtra(<span class="stringliteral">&quot;id_client&quot;</span>, id_client);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        intentEditCamera.putExtra(<span class="stringliteral">&quot;id_camera&quot;</span>, listeCameras.get(position).getIdentifiant());</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        this.startActivityForResult(intentEditCamera, 0);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    @Override</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a2c16e417886d78b4ddee1a4d05c64a26">  157</a></span>&#160;    <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a2c16e417886d78b4ddee1a4d05c64a26">onActivityResult</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">int</span> resultCode, Intent data) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span>(resultCode == RESULT_OK) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            listeCamerasClient = dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a325ac3b4347dc643717388943ad7a4c8">getListCameras</a>(id_client);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">close</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            listeCameras = <span class="keyword">new</span> ArrayList&lt;Cameras&gt;(listeCamerasClient);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            listView = (ListView)findViewById(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r.html">R</a>.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">id</a>.listViewCameras);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            camerasAdapter = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_adapter.html">CamerasAdapter</a>(<span class="keyword">this</span>, listeCamerasClient);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            listView.setAdapter(camerasAdapter);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#abe747309abc900c1b76b88aa76e8db3f">  177</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#abe747309abc900c1b76b88aa76e8db3f">getClients</a>() {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            httpClient = <span class="keyword">new</span> DefaultHttpClient();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            httpPost = <span class="keyword">new</span> HttpPost(<span class="stringliteral">&quot;http://172.16.69.21/Scripts/Android/getClients.php?id_client=&quot;</span>+id_client);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            response = httpClient.execute(httpPost);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            ResponseHandler&lt;String&gt; responseHandler = <span class="keyword">new</span> BasicResponseHandler();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keyword">final</span> String response = httpClient.execute(httpPost, responseHandler);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            listeClients = dao.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#a424f4b083afa00f72ac493d1d4553f4b">getListClients</a>(response);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            System.out.println(<span class="stringliteral">&quot;Exception : &quot;</span> + e.getMessage());</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    </div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a7fc90f206cd7b7f0609abe8423a02e1b">  196</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a7fc90f206cd7b7f0609abe8423a02e1b">getCameras</a>() {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            httpClient = <span class="keyword">new</span> DefaultHttpClient();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            httpPost = <span class="keyword">new</span> HttpPost(<span class="stringliteral">&quot;http://172.16.69.21/Scripts/Android/getCameras.php?id_client=&quot;</span>+id_client);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            response = httpClient.execute(httpPost);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            ResponseHandler&lt;String&gt; responseHandler = <span class="keyword">new</span> BasicResponseHandler();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keyword">final</span> String response = httpClient.execute(httpPost, responseHandler);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            listeCameras = dao.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#ab0f9ce2eb22b79afc80773a6e14cb902">getListCameras</a>(response);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            System.out.println(<span class="stringliteral">&quot;Exception : &quot;</span> + e.getMessage());</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a735e4713813acd59f168ef4c7721b136">  215</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a735e4713813acd59f168ef4c7721b136">getConnexions</a>() {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            httpClient = <span class="keyword">new</span> DefaultHttpClient();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            httpPost = <span class="keyword">new</span> HttpPost(<span class="stringliteral">&quot;http://172.16.69.21/Scripts/Android/getConnexions.php?id_client=&quot;</span>+id_client);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            response = httpClient.execute(httpPost);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            ResponseHandler&lt;String&gt; responseHandler = <span class="keyword">new</span> BasicResponseHandler();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keyword">final</span> String response = httpClient.execute(httpPost, responseHandler);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            listeConnexions = dao.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#a3568879f39b634def3dc33cae157db9b">getListConnexions</a>(response);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            System.out.println(<span class="stringliteral">&quot;Exception : &quot;</span> + e.getMessage());</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#aeebcb022f76acb431a2acf70081a03dd">  234</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#aeebcb022f76acb431a2acf70081a03dd">initDb</a>() {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a7af2f07250d711f5e67290aa69ec9e95">clearDatabase</a>();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_clients.html">Clients</a> client : listeClients) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a82e0ac267ba2d62a22357f5ad7308224">insertClient</a>(client);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras.html">Cameras</a> camera : listeCameras) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a23042b791be92ed3a7b766784e5cf4ce">insertCamera</a>(camera);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html">Connexions</a> connexion : listeConnexions) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ae4b198031607098a6e1a7923ae0e72b6">insertConnexion</a>(connexion);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ae4b198031607098a6e1a7923ae0e72b6">insertConnexion</a>(<span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html">Connexions</a>(dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#af7ea2a8ab116f6dfc7298883a8597307">getMaxIDConnexion</a>(id_client) + 1, id_client, <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a47bb24caec811cfd8c7de0bcedde6daf">getLocalIpAddress</a>()));</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        Thread setConnexions = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> run() {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a> dbSecuriPi = <span class="keyword">new</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">DbAdapter</a>(<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html">CamerasActivity</a>.this);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">open</a>();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                dao.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#acccd00bf4dee270afa08424d48b0d193">setConnexions</a>(<span class="keyword">new</span> ArrayList&lt;Connexions&gt;(dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ab34308c596565e50b0668a4f79e23edf">getListConnexions</a>(id_client)));</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        });</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        setConnexions.start();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">try</span> { setConnexions.join(); } <span class="keywordflow">catch</span>(Exception e) {}</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        dbSecuriPi.<a class="code" href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">close</a>();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        dialog.dismiss();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    </div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a47bb24caec811cfd8c7de0bcedde6daf">  271</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a47bb24caec811cfd8c7de0bcedde6daf">getLocalIpAddress</a>(){</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        WifiManager wm = (WifiManager) getSystemService(WIFI_SERVICE);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        String ip = Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress());</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> ip;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html_ab0f9ce2eb22b79afc80773a6e14cb902"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#ab0f9ce2eb22b79afc80773a6e14cb902">org.securipi.securipi.DAO.getListCameras</a></div><div class="ttdeci">ArrayList&lt; Cameras &gt; getListCameras(String jsonString)</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00116">DAO.java:116</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_ae4b9d0655ea2fc83e80d623a46e21fca"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#ae4b9d0655ea2fc83e80d623a46e21fca">org.securipi.securipi.CamerasActivity.onOptionsItemSelected</a></div><div class="ttdeci">boolean onOptionsItemSelected(MenuItem item)</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00110">CamerasActivity.java:110</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a7fc90f206cd7b7f0609abe8423a02e1b"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a7fc90f206cd7b7f0609abe8423a02e1b">org.securipi.securipi.CamerasActivity.getCameras</a></div><div class="ttdeci">void getCameras()</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00196">CamerasActivity.java:196</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html">org.securipi.securipi.CamerasActivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00031">CamerasActivity.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_adapter_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_adapter.html">org.securipi.securipi.CamerasAdapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_cameras_adapter_8java_source.html#l00016">CamerasAdapter.java:16</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html_acccd00bf4dee270afa08424d48b0d193"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#acccd00bf4dee270afa08424d48b0d193">org.securipi.securipi.DAO.setConnexions</a></div><div class="ttdeci">void setConnexions(ArrayList&lt; Connexions &gt; listConnexions)</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00244">DAO.java:244</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a343716bc83a84bfd16e23e6221d4be50"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a343716bc83a84bfd16e23e6221d4be50">org.securipi.securipi.CamerasActivity.onItemClick</a></div><div class="ttdeci">void onItemClick(AdapterView&lt;?&gt; a, View v, int position, long id)</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00133">CamerasActivity.java:133</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_mjpeg_sample_activity_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_mjpeg_sample_activity.html">org.securipi.securipi.MjpegSampleActivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_mjpeg_sample_activity_8java_source.html#l00019">MjpegSampleActivity.java:19</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a2c16e417886d78b4ddee1a4d05c64a26"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a2c16e417886d78b4ddee1a4d05c64a26">org.securipi.securipi.CamerasActivity.onActivityResult</a></div><div class="ttdeci">void onActivityResult(int num, int resultCode, Intent data)</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00157">CamerasActivity.java:157</a></div></div>
+<div class="ttc" id="namespaceorg_html"><div class="ttname"><a href="namespaceorg.html">org</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_aeebcb022f76acb431a2acf70081a03dd"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#aeebcb022f76acb431a2acf70081a03dd">org.securipi.securipi.CamerasActivity.initDb</a></div><div class="ttdeci">void initDb()</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00234">CamerasActivity.java:234</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html">org.securipi.securipi.DAO</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00026">DAO.java:26</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a82e0ac267ba2d62a22357f5ad7308224"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a82e0ac267ba2d62a22357f5ad7308224">org.securipi.securipi.DbAdapter.insertClient</a></div><div class="ttdeci">long insertClient(Clients client)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00241">DbAdapter.java:241</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_af1138535a56bb72102483c3b043263ab"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#af1138535a56bb72102483c3b043263ab">org.securipi.securipi.CamerasActivity.onItemLongClick</a></div><div class="ttdeci">boolean onItemLongClick(AdapterView&lt;?&gt; parent, View v, int position, long id)</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00144">CamerasActivity.java:144</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a127e4fcc100aa8280696cbd4d0550f8e"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a127e4fcc100aa8280696cbd4d0550f8e">org.securipi.securipi.CamerasActivity.onCreateOptionsMenu</a></div><div class="ttdeci">boolean onCreateOptionsMenu(Menu menu)</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00100">CamerasActivity.java:100</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_1_1menu_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r_1_1menu.html">org.securipi.securipi.R.menu</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00060">R.java:60</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a7af2f07250d711f5e67290aa69ec9e95"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a7af2f07250d711f5e67290aa69ec9e95">org.securipi.securipi.DbAdapter.clearDatabase</a></div><div class="ttdeci">void clearDatabase()</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00096">DbAdapter.java:96</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a735e4713813acd59f168ef4c7721b136"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a735e4713813acd59f168ef4c7721b136">org.securipi.securipi.CamerasActivity.getConnexions</a></div><div class="ttdeci">void getConnexions()</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00215">CamerasActivity.java:215</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras.html">org.securipi.securipi.Cameras</a></div><div class="ttdef"><b>Definition:</b> <a href="_cameras_8java_source.html#l00006">Cameras.java:6</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_user_setting_activity.html">org.securipi.securipi.UserSettingActivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_user_setting_activity_8java_source.html#l00020">UserSettingActivity.java:20</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a8245f61c842f07ff86d8527bc5a8ff70"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a8245f61c842f07ff86d8527bc5a8ff70">org.securipi.securipi.CamerasActivity.onCreate</a></div><div class="ttdeci">void onCreate(Bundle savedInstanceState)</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00065">CamerasActivity.java:65</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_ab34308c596565e50b0668a4f79e23edf"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ab34308c596565e50b0668a4f79e23edf">org.securipi.securipi.DbAdapter.getListConnexions</a></div><div class="ttdeci">List&lt; Connexions &gt; getListConnexions(int id_client)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00366">DbAdapter.java:366</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_af7ea2a8ab116f6dfc7298883a8597307"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#af7ea2a8ab116f6dfc7298883a8597307">org.securipi.securipi.DbAdapter.getMaxIDConnexion</a></div><div class="ttdeci">int getMaxIDConnexion(int id_client)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00393">DbAdapter.java:393</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_abe747309abc900c1b76b88aa76e8db3f"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#abe747309abc900c1b76b88aa76e8db3f">org.securipi.securipi.CamerasActivity.getClients</a></div><div class="ttdeci">void getClients()</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00177">CamerasActivity.java:177</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_1_1layout_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r_1_1layout.html">org.securipi.securipi.R.layout</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00051">R.java:51</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r.html">org.securipi.securipi.R</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00010">R.java:10</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_ae4b198031607098a6e1a7923ae0e72b6"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#ae4b198031607098a6e1a7923ae0e72b6">org.securipi.securipi.DbAdapter.insertConnexion</a></div><div class="ttdeci">long insertConnexion(Connexions connexion)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00349">DbAdapter.java:349</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html_a3568879f39b634def3dc33cae157db9b"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#a3568879f39b634def3dc33cae157db9b">org.securipi.securipi.DAO.getListConnexions</a></div><div class="ttdeci">ArrayList&lt; Connexions &gt; getListConnexions(String jsonString)</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00196">DAO.java:196</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a23042b791be92ed3a7b766784e5cf4ce"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a23042b791be92ed3a7b766784e5cf4ce">org.securipi.securipi.DbAdapter.insertCamera</a></div><div class="ttdeci">long insertCamera(Cameras camera)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00107">DbAdapter.java:107</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a325ac3b4347dc643717388943ad7a4c8"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a325ac3b4347dc643717388943ad7a4c8">org.securipi.securipi.DbAdapter.getListCameras</a></div><div class="ttdeci">List&lt; Cameras &gt; getListCameras(int id_client)</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00200">DbAdapter.java:200</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_cameras_activity_html_a47bb24caec811cfd8c7de0bcedde6daf"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_cameras_activity.html#a47bb24caec811cfd8c7de0bcedde6daf">org.securipi.securipi.CamerasActivity.getLocalIpAddress</a></div><div class="ttdeci">String getLocalIpAddress()</div><div class="ttdef"><b>Definition:</b> <a href="_cameras_activity_8java_source.html#l00271">CamerasActivity.java:271</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_edit_camera_activity_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_edit_camera_activity.html">org.securipi.securipi.EditCameraActivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_edit_camera_activity_8java_source.html#l00018">EditCameraActivity.java:18</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html">org.securipi.securipi.Connexions</a></div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00009">Connexions.java:9</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_d_a_o_html_a424f4b083afa00f72ac493d1d4553f4b"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_d_a_o.html#a424f4b083afa00f72ac493d1d4553f4b">org.securipi.securipi.DAO.getListClients</a></div><div class="ttdeci">ArrayList&lt; Clients &gt; getListClients(String jsonString)</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_8java_source.html#l00043">DAO.java:43</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_r_1_1id_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_r_1_1id.html">org.securipi.securipi.R.id</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_8java_source.html#l00027">R.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_clients_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_clients.html">org.securipi.securipi.Clients</a></div><div class="ttdef"><b>Definition:</b> <a href="_clients_8java_source.html#l00006">Clients.java:6</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html">org.securipi.securipi.DbAdapter</a></div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00014">DbAdapter.java:14</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_aab92d2bdb2aea03cd0603b2a3a0cc7f8"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#aab92d2bdb2aea03cd0603b2a3a0cc7f8">org.securipi.securipi.DbAdapter.open</a></div><div class="ttdeci">DbAdapter open()</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00079">DbAdapter.java:79</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_db_adapter_html_a5027b1e6411ef70e2353ed01227bf6f7"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_db_adapter.html#a5027b1e6411ef70e2353ed01227bf6f7">org.securipi.securipi.DbAdapter.close</a></div><div class="ttdeci">DbAdapter close()</div><div class="ttdef"><b>Definition:</b> <a href="_db_adapter_8java_source.html#l00088">DbAdapter.java:88</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_add_camera_activity_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_add_camera_activity.html">org.securipi.securipi.AddCameraActivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_add_camera_activity_8java_source.html#l00015">AddCameraActivity.java:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b8e0663afee48cb679b74bbd21bdf843.html">org</a></li><li class="navelem"><a class="el" href="dir_23025f24e0c26e1403415f7e77a9b19a.html">securipi</a></li><li class="navelem"><a class="el" href="dir_e9f57a99468db133c91529b64ac1fdc5.html">securipi</a></li><li class="navelem"><a class="el" href="_cameras_activity_8java.html">CamerasActivity.java</a></li>
+    <li class="footer">Généré le Vendredi 29 Mai 2015 00:55:48 pour SécuriPi par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

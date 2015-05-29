@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/tekmor/Documents/Développement/SecuriPi_Android/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/tekmor/Documents/Développement/SecuriPi_Android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">SécuriPi</string>
+    <string name="buttonPassword">buttonPassword</string>
+    <string name="menu_settings">Mon compte</string>
+    <string name="textButtonAddCam">Ajouter</string>
+    <string name="textButtonConnexion">Connexion</string>
+    <string name="textButtonDelCam">Supprimer la caméra</string>
+    <string name="textButtonSaveCam">Sauvegarder</string>
+    <string name="textComplement">Complement</string>
+    <string name="textEmplacement">Emplacement</string>
+    <string name="textIP">Adresse IP</string>
+    <string name="textLogin">Identifiant</string>
+    <string name="textNom">Nom</string>
+    <string name="textPassword">Mot de passe</string>
+    <string name="textPort">Port</string>
+    <string name="title_activity_add_camera">Ajouter une caméra</string>
+    <string name="title_activity_cameras">Mes caméras</string>
+    <string name="title_activity_edit_camera">Gestion de la caméra</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_mjpeg_sample"/>
+    <string name="title_activity_user_setting">Mon compte</string>
+    <!-- From: file:/Users/tekmor/Documents/Développement/SecuriPi_Android/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

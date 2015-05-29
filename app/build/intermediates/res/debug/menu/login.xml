@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.securipi.securipi.LoginActivity" >
+
+</menu><!-- From: file:/Users/tekmor/Documents/Développement/SecuriPi_Android/app/src/main/res/menu/login.xml -->

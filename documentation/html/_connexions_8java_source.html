@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SécuriPi:  Fichier source de src/org/securipi/securipi/Connexions.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SécuriPi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetages</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_connexions_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Connexions.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_connexions_8java.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>org.securipi.securipi;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.text.SimpleDateFormat;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.util.Date;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html">Connexions</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// ATTRIBUTS</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> identifiant, id_client;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span> String date, heure, ip;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// ----------------------------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// ACCESSEURS</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a705ee6ddf608a837d356e2dbbf854368">   22</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a705ee6ddf608a837d356e2dbbf854368">getIdentifiant</a>() {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> identifiant;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a4864f2f10810a983901d629920373c9c">   29</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a4864f2f10810a983901d629920373c9c">setIdentifiant</a>(<span class="keywordtype">int</span> identifiant) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this.identifiant = identifiant;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ab7b26efff55cbc3e0a1259a5d6a5a9e9">   37</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ab7b26efff55cbc3e0a1259a5d6a5a9e9">getID_Client</a>() {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> id_client;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a4a1bbd4cd3a6cddaed33de6c07ab859e">   44</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a4a1bbd4cd3a6cddaed33de6c07ab859e">setID_Client</a>(<span class="keywordtype">int</span> id_client) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this.id_client = id_client;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a171b1d3da939cd57546372c7c3dfa508">   52</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a171b1d3da939cd57546372c7c3dfa508">getDate</a>() {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> date;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#abcb93d0ec34cdeefa0f5f9d74e7499be">   59</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#abcb93d0ec34cdeefa0f5f9d74e7499be">setDate</a>(String date) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        this.date = date;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#acb147f3e53ec7cf324a469aca366d035">   67</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#acb147f3e53ec7cf324a469aca366d035">getHeure</a>() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> heure;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a24aff07e0d6e6908fc3b83a7c886ac00">   74</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a24aff07e0d6e6908fc3b83a7c886ac00">setHeure</a>(String heure) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        this.heure = heure;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ab04acecbe5fa79ba22c500fb57c132d2">   82</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ab04acecbe5fa79ba22c500fb57c132d2">getIP</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> ip;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a40dd59dfb4c531c6d380bdd5d3b6fbbe">   89</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a40dd59dfb4c531c6d380bdd5d3b6fbbe">setIP</a>(String ip) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        this.ip = ip;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//-----------------------------------</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// CONSTRUCTEURS</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#af597cf86e4657adb0a5884246f6df2c1">  102</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#af597cf86e4657adb0a5884246f6df2c1">Connexions</a>(<span class="keywordtype">int</span> identifiant, <span class="keywordtype">int</span> id_client, String ip) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        Date now = <span class="keyword">new</span> Date();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        String date = <span class="keyword">new</span> SimpleDateFormat(<span class="stringliteral">&quot;yyyy-MM-dd&quot;</span>).format(now);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        String heure = <span class="keyword">new</span> SimpleDateFormat(<span class="stringliteral">&quot;HH:mm:ss&quot;</span>).format(now);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        this.identifiant        = identifiant;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        this.id_client          = id_client;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        this.date               = date;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        this.heure              = heure;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        this.ip                 = ip;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ad2b588e9f5a19c2275815d880ba1ef44">  121</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ad2b588e9f5a19c2275815d880ba1ef44">Connexions</a>(<span class="keywordtype">int</span> identifiant, <span class="keywordtype">int</span> id_client, String date, String heure, String ip) {       </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        this.identifiant        = identifiant;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        this.id_client          = id_client;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        this.date               = date;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        this.heure              = heure;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        this.ip                 = ip;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_ab04acecbe5fa79ba22c500fb57c132d2"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ab04acecbe5fa79ba22c500fb57c132d2">org.securipi.securipi.Connexions.getIP</a></div><div class="ttdeci">String getIP()</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00082">Connexions.java:82</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_a171b1d3da939cd57546372c7c3dfa508"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a171b1d3da939cd57546372c7c3dfa508">org.securipi.securipi.Connexions.getDate</a></div><div class="ttdeci">String getDate()</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00052">Connexions.java:52</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_af597cf86e4657adb0a5884246f6df2c1"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#af597cf86e4657adb0a5884246f6df2c1">org.securipi.securipi.Connexions.Connexions</a></div><div class="ttdeci">Connexions(int identifiant, int id_client, String ip)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00102">Connexions.java:102</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_a24aff07e0d6e6908fc3b83a7c886ac00"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a24aff07e0d6e6908fc3b83a7c886ac00">org.securipi.securipi.Connexions.setHeure</a></div><div class="ttdeci">void setHeure(String heure)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00074">Connexions.java:74</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_acb147f3e53ec7cf324a469aca366d035"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#acb147f3e53ec7cf324a469aca366d035">org.securipi.securipi.Connexions.getHeure</a></div><div class="ttdeci">String getHeure()</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00067">Connexions.java:67</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_ad2b588e9f5a19c2275815d880ba1ef44"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ad2b588e9f5a19c2275815d880ba1ef44">org.securipi.securipi.Connexions.Connexions</a></div><div class="ttdeci">Connexions(int identifiant, int id_client, String date, String heure, String ip)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00121">Connexions.java:121</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_a4864f2f10810a983901d629920373c9c"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a4864f2f10810a983901d629920373c9c">org.securipi.securipi.Connexions.setIdentifiant</a></div><div class="ttdeci">void setIdentifiant(int identifiant)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00029">Connexions.java:29</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_a40dd59dfb4c531c6d380bdd5d3b6fbbe"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a40dd59dfb4c531c6d380bdd5d3b6fbbe">org.securipi.securipi.Connexions.setIP</a></div><div class="ttdeci">void setIP(String ip)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00089">Connexions.java:89</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_ab7b26efff55cbc3e0a1259a5d6a5a9e9"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#ab7b26efff55cbc3e0a1259a5d6a5a9e9">org.securipi.securipi.Connexions.getID_Client</a></div><div class="ttdeci">int getID_Client()</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00037">Connexions.java:37</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html">org.securipi.securipi.Connexions</a></div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00009">Connexions.java:9</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_a4a1bbd4cd3a6cddaed33de6c07ab859e"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a4a1bbd4cd3a6cddaed33de6c07ab859e">org.securipi.securipi.Connexions.setID_Client</a></div><div class="ttdeci">void setID_Client(int id_client)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00044">Connexions.java:44</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_a705ee6ddf608a837d356e2dbbf854368"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#a705ee6ddf608a837d356e2dbbf854368">org.securipi.securipi.Connexions.getIdentifiant</a></div><div class="ttdeci">int getIdentifiant()</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00022">Connexions.java:22</a></div></div>
+<div class="ttc" id="classorg_1_1securipi_1_1securipi_1_1_connexions_html_abcb93d0ec34cdeefa0f5f9d74e7499be"><div class="ttname"><a href="classorg_1_1securipi_1_1securipi_1_1_connexions.html#abcb93d0ec34cdeefa0f5f9d74e7499be">org.securipi.securipi.Connexions.setDate</a></div><div class="ttdeci">void setDate(String date)</div><div class="ttdef"><b>Definition:</b> <a href="_connexions_8java_source.html#l00059">Connexions.java:59</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b8e0663afee48cb679b74bbd21bdf843.html">org</a></li><li class="navelem"><a class="el" href="dir_23025f24e0c26e1403415f7e77a9b19a.html">securipi</a></li><li class="navelem"><a class="el" href="dir_e9f57a99468db133c91529b64ac1fdc5.html">securipi</a></li><li class="navelem"><a class="el" href="_connexions_8java.html">Connexions.java</a></li>
+    <li class="footer">Généré le Vendredi 29 Mai 2015 00:55:48 pour SécuriPi par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

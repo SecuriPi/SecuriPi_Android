@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SécuriPi</string>
+    <string name="textNom">Nom</string>
+    <string name="textEmplacement">Emplacement</string>
+    <string name="textIP">Adresse IP</string>
+    <string name="textComplement">Complement</string>
+    <string name="textPort">Port</string>
+    <string name="textLogin">Identifiant</string>
+    <string name="textPassword">Mot de passe</string>
+    <string name="textButtonConnexion">Connexion</string>
+    <string name="textButtonSaveCam">Sauvegarder</string>
+    <string name="textButtonDelCam">Supprimer la caméra</string>
+    <string name="textButtonAddCam">Ajouter</string>
+    <string name="menu_settings">Mon compte</string>
+    <string name="buttonPassword">buttonPassword</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_mjpeg_sample"></string>
+    <string name="title_activity_edit_camera">Gestion de la caméra</string>
+    <string name="title_activity_cameras">Mes caméras</string>
+    <string name="title_activity_user_setting">Mon compte</string>
+    <string name="title_activity_add_camera">Ajouter une caméra</string>
+
+</resources>
